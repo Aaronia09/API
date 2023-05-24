@@ -1,10 +1,8 @@
 <?php
-$url = "http://127.0.0.1/API/modele.php/1"; // modifier le produit 1
-$data = array( 'modele_id' => '1',
-'nom' => 'Mercedes',
-'categorie_id' => '1', 
-'marque_id' => '1', 
-'description' => 'Belle Voiture', 
+$url = "http://127.0.0.1/API/categorie.php/1"; 
+$data = array( 'categorie_id' => '1',
+'nom' => 'Desert'
+ 
 	 );
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
