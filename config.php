@@ -2,6 +2,6 @@
 	$server = "localhost";
 	$username = "root";
 	$password = "";
-	$db = "garage";
+	$db = "packauto";
 	$conn = mysqli_connect($server, $username, $password, $db);
 ?>
