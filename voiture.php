@@ -43,9 +43,9 @@ function AddVoiture()
     $modele_id = $_POST["modele_id"];
     $marque_id = $_POST["marque_id"];
     $designation = $_POST["designation"];
-    $prix = $_POST["prix"];
+     $annee = $_POST["annee"];
     $couleur = $_POST["couleur"];
-    $annee = $_POST["annee"]; // Utilisation de la valeur fournie dans le formulaire
+    $prix = $_POST["prix"];
     $query = "INSERT INTO voiture(nom, modele_id, marque_id, designation, prix, couleur, annee) VALUES('" . $nom . "','" . $modele_id . "','" . $marque_id . "','" . $designation . "', '" . $prix . "', '" . $couleur . "', '" . $annee . "')";
 
     if (mysqli_query($conn, $query)) {
